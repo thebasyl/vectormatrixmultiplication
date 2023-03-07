@@ -1,0 +1,124 @@
+body 
+{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+.vector 
+{
+    cursor: text;
+    display: grid;
+    grid-template-columns: 5rem;
+    grid-template-rows: 5rem 5rem;
+    position: relative;
+}
+
+.vector::before 
+{
+    content: "(";
+    position: absolute;
+    font-size: 8rem;
+    left: -2rem;
+    top: -0.25rem;
+}
+
+.vector::after 
+{
+    content: ")";
+    position: absolute;
+    font-size: 8rem;
+    right: -2rem;
+    top: -0.25rem;
+}
+
+.matrix 
+{
+    cursor: text;
+    display: grid;
+    grid-template-columns: 5rem 5rem;
+    grid-template-rows: 5rem 5rem;
+    position: relative;
+}
+
+.matrix::before 
+{
+    content: "(";
+    position: absolute;
+    font-size: 8rem;
+    left: -2rem;
+    top: -0.25rem;
+}
+
+.matrix::after 
+{
+    content: ")";
+    position: absolute;
+    font-size: 8rem;
+    right: -2rem;
+    top: -0.25rem;
+}
+
+input 
+{
+    font-size: 2rem;
+    background: none;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button 
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[ type = number ] 
+{
+    -moz-appearance: textfield;
+}
+
+p 
+{
+    font-size: 2rem;
+    width: 5rem;
+}
+
+.output 
+{
+    display: grid;
+    grid-template-columns: 5rem;
+    grid-template-rows: 5rem 5rem;
+    position: relative;
+    text-align: center;
+}
+
+.output > p 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.output::before 
+{
+    content: "(";
+    position: absolute;
+    font-size: 8rem;
+    left: -2rem;
+    top: -0.25rem;
+}
+
+.output::after 
+{
+    content: ")";
+    position: absolute;
+    font-size: 8rem;
+    right: -2rem;
+    top: -0.25rem;
+}
